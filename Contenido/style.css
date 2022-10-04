@@ -1,0 +1,410 @@
+body{
+
+    font-family: 'Raleway', sans-serif;                     /*Se aplica estilo de letra a todo el body de la pagina */
+
+}
+
+header{
+
+    background: #BBBBBB;
+    padding: 20px;                                          /*Se realiza un espaciamiento interno del header*/
+
+}
+
+.caja{
+
+    width: 940px;                                           /*Se coloca siempre de 940 ya que la mayoria ocupan son  1280px*/
+    position: relative;                                     /* Posicion relativa con relacion a la absoluta que habiamos puesto anteriormente*/ 
+    margin: 0 auto;
+
+}
+
+
+nav {
+
+    position: absolute;                                       /*Posicionamiento*/   
+    top: 110px;                                               /*Posicionamiento arriba */                                    
+    right: 0;
+
+}
+
+nav li {
+
+    display: inline;                                        /* Texto solo ocupa lo primordial y no toda la linea*/
+    margin: 0 0 0 15px;                                     /* Se separan los items uno del otro*/
+
+}
+
+nav a {
+
+    text-transform: uppercase;                              /* PARA PONER EN MAYUSCULAS*/
+    color: black;                                       /* color*/
+    font-weight: bold;                                  /*Para aplicar negrita*/
+    font-size: 22px;                                    /*Tamaño de fuente*/
+    text-decoration: none;                              /*Para quitar el subrayado por defecto cuando se le da click*/
+
+}
+
+nav a:hover{                                                /*Se usa el hover para capturar evento cuando se pase el mouse*/
+
+    color: #c78c19;                                         /*Cambia al color seleccionado*/
+    text-decoration: underline;                               /*Subraya el navegado al pasar el mouse*/
+
+}
+
+.productos{
+
+    width: 940px;                                           /*Se coloca siempre de 940 ya que la mayoria ocupan son  1280px*/
+    margin:0 auto;
+    padding: 50px;                                          /* Asignamos padding para que el item baje un poco del encabezado*/                                     
+    
+
+}
+
+.productos li{
+
+    display: inline-block;
+    text-align: center;
+    width: 30%;                                             /*Se coloca el 30% porque son 3 items sumarian el 90 y el 10 seria el espacio entre ellos*/
+    vertical-align: top;
+                                                            /*Se aplica color para ver los desfases que hay entre los items*/
+    margin: 0 1.5%;                                         /*Se aplica margen para dar espacios entre los items*/
+    padding: 30px 20px;
+    box-sizing: border-box;                                 /* Se aplica para que los items no salten de linea*/                          
+    border-color: black;                                  /* Aplica color en el borde*/
+    border-width: 2px;                                      /*Aplica ancho al borde de 2px*/
+    border-style: solid;                                    /* Borde linea solida*/
+    border-radius: 10px;                                    /* Se aplica para redondear los bordes*/
+}
+
+.productos li:hover{
+
+    border-color: #c78c19;                               /*Se aplica el hover ahora para que se alumbren los bordes*/
+
+}
+
+.productos li:active{                                       /*Se aplica el active para que al momento de click cambie a color verde*/
+
+    border-color: #088c19;
+
+}
+
+.productos h2{
+
+    font-size: 22px;
+    font-weight: bold;   
+
+}
+
+.productos li:hover h2{                                     /*Se aplica el hover y despues h2 para que el titulo de producto, aumente el tamaño al pasar el mouse*/
+
+    font-size: 33px;
+
+}
+
+.producto-descripcion{
+
+    font-size: 18px;
+
+}
+
+.producto-precio{
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;                                       /* Se usa para dar un espacio de margen con el texto de arriba*/
+
+}
+
+footer{
+
+    text-align: center;                                         /* Se alinea el texto a centro*/
+    background: url(imagenes/bg.jpg);                           /* Se carga la imagen con la propiedad url y se pone la carpeta e imagen*/
+    padding: 40px;                                              /* Se hace un padding de 40px*/
+
+}
+
+.derechos{
+    
+    color:#ffffff;                                            /*Se crea clase para cambiar el color del texto del parrafo*/
+    font-size: 13px;                                            /* Se cambia el tamaño de fuente*/
+    margin: 20px;                                               /* Se emplea un margen de 20px para separarlo de la imagen*/
+
+}
+
+form{       
+
+    margin: 40px 300px;                                             /* Se aplica margen de 40px arriba y abajo, así agranda el formulario*/
+
+}
+
+form label, form legend{                                             /*Se aplica a mas de una etiqueta el mismo estilo*/                                     
+
+    display:block;                                               /* Se bloquea para poner de manera vertical*/
+    font-size: 20px;                                             /*Se cambia el tamaño de fuente a 20px*/
+    margin: 0 0 10px;                                            /* Se pone un margen 10 px para abajo*/
+
+}
+
+.input-padron{                                                   /* Se bloquea para poner de manera vertical, se puede aplica a mas de una etiqueta los mismos estilos*/
+
+    display: block;
+    margin: 0 0 20px;                                            /*Se pone un margen de 20px para abajo*/
+    padding: 10px 25px;                                          /*Se define el espaciamiento interno de la caja del input 10 arriba y abajo y 25 a los lados*/
+    width: 50%;                                                  /* Alargamos el ancho del input*/
+}
+
+.checkbox{
+
+    margin: 20px 0;                                              /* Se hace un margen de 20px arriba y abajo para el label del checkbox*/
+
+}
+
+.enviar{
+
+    width: 40%;                                                 /*Aumentamos el ancho del boton en un 40% del area disponible*/
+    padding: 15px 0;                                            /*Hacemos padding arriba y abajo de 15 px y 0 a los lados*/
+    font-size: 18px;                                            /*Aumentamos tamaño de letra*/
+    font-weight: bold;
+    color: white;                                             /*color de letra*/
+    background: orange;                                       /*color de fondo background*/
+    border: none;                                               /*Se aplica un borde por defecto, entonces aplicamos none para quitarlo*/
+    border-radius: 5px;                                         /*Redondeamos los bordes a 5px*/
+    transition: 1s all;                                  /*Se aplica transicion de un segundo al background, para que se note un poco más lento, como primera medida, luego cambiamos background por all para que aplique a todo lo que esta dentro del .enviar*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+
+    background: darkorange;                                 /*Aplicamos un hover, al momento de pasar el mouse por el boton cambie de color a naranja oscuro*/
+    transform: scale(1.20);                                 /*Con transform agranda el boton al pasar el mouse*/                           
+
+}
+
+table{
+
+    margin: 40px 350px;                                       /*Aplicamos margen de 40px arriba y abajo y 40 px a los lados a table*/
+
+}
+
+
+thead {
+
+    background: #555555;
+    color: white;
+    font-weight: bold;
+
+}
+
+td, th {
+
+    border: 1px solid black;
+    padding: 8px 15px;
+
+}
+
+/* Aquí inicia el CSS para index - Home */
+
+.barberShop{
+
+    width: 100%;
+
+}
+
+.principal {
+
+    background: #fefefe;
+    padding: 45px 0;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+
+.titulo-principal{
+
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 15px;
+    clear: left;  
+
+}
+
+.principal p{
+
+    margin: 0 0 15px;
+
+}
+
+.principal strong{
+
+    font-weight: bold;
+
+}
+
+.principal em{
+
+    font-style: italic;
+
+}
+
+.utensilios {
+
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+
+.mapa{
+
+    padding: 45px 0;
+    background: linear-gradient(#Fefefe, #888888);
+
+}
+
+.mapa p {
+
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.contenedor-mapa{
+
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.diferenciales {
+
+    background: #888888;
+    padding: 45px 0;
+
+}
+
+.contenido-diferenciales {
+
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.lista-diferenciales{
+
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.item {
+
+    line-height: 1.5;
+
+}
+
+.item:before {
+
+    content: "★";
+
+}
+
+.item:first-child{
+
+    font-weight: bold;
+    
+}
+
+.imagenDiferenciales {
+
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+
+}
+
+.imagenDiferenciales:hover{
+
+    opacity:0.3;
+
+}
+
+.video {
+
+    text-align: center;
+    margin: 15px auto;
+
+}
+
+/* Config pag celular - Home */
+
+@media screen and (max-width: 480px) {
+    
+   h1{
+
+    text-align: center;
+
+   }
+
+   nav {
+
+    position: static;
+
+   }
+   
+    .caja , .principal, .contenedor-mapa, .contenido-diferenciales{
+
+    width: auto;
+
+   }
+
+   .lista-diferenciales, .imagenDiferenciales{
+
+    width: 100%;
+
+   }
+
+   .link-video {
+
+    width: 100%;
+
+   }
+
+}
+
+/* Config pag celular - Productos */
+
+@media screen and (max-width: 480px) {
+    
+    .productos{
+
+        width: auto;
+
+    }
+    .productos li{
+
+        width: auto;
+        margin: 20px 5px;
+
+    }
+ 
+ }
+
+ /* Config pag celular - Contactos */
+
+ @media screen and (max-width: 480px) {
+    
+    form , table {
+
+        margin: 40px 40px;
+
+    }
+
+    .enviar {
+
+        width: 100%;
+
+    }
+ 
+ }
